@@ -4,11 +4,14 @@ import WhatsOnJiwaGroup from "./components/whatsOnJiwaGroup";
 
 export default function Home() {
   return (
-    <div className="">
-      
-    <OurBrand/>
-    
-    <WhatsOnJiwaGroup/>
-    </div>
+
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-3xl font-bold">Welcome to Janjiw</h1>
+      <h1 className="text-3xl font-bold">Welcome to Janjiw</h1>
+      <h1 className="text-3xl font-bold">Welcome to Janjiw</h1>
+      <h1 className="text-3xl font-bold">Welcome to Janjiw</h1>
+      <h1 className="text-3xl font-bold">Welcome to Janjiw</h1>
+    </main>
+
   );
 }

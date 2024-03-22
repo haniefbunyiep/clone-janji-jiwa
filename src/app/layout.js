@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/component/Footer";
+import Navbar from "@/component/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+
+        <div className="flex min-h-screen w-full flex-col justify-between">
+          <div className="sticky top-0 z-50">
+            <Navbar />
+          </div>
+          <div className="flex h-max items-center justify-center p-10"></div>
+          {children}
+          <Footer />
+        </div>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>
     </html>
   );
